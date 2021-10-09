@@ -11,7 +11,6 @@
 To run this project, install xampp then git clone the repo inside xampp folder
 ```
 $ cd C:\xampp\htdocs\Web_Individual
-
 ```
 Start apache server and enter in url
 ```
