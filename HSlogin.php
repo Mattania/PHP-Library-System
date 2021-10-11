@@ -32,13 +32,23 @@
        if(!empty($_POST['username'])){
            $username = test_input($_POST['username']);
          }else{      
-           $usernameErr = "Username is a required field";
+           $usernameErr = "* Username is a required field";
+           ?>
+           <style>
+               #u_name{border:1px solid red; background-color:rgba(240, 52, 52, 0.2);}
+            </style>
+           <?php
          }
 
          if(!empty($_POST['password'])){
            $password= test_input($_POST['password']);
          }else{      
-           $passErr = "Password is required";
+           $passErr = "* Password is required";
+           ?>
+           <style>
+               #pass_word{border:1px solid red; background-color:rgba(240, 52, 52, 0.2);}
+           </style>
+        <?php
          }
          
     }
@@ -56,7 +66,7 @@
         header('location: HSaddbook.php');
         exit();
     }if(!empty($_POST['username']) && $username != $myuser_name && !empty($_POST['password']) && $password != $mypass){
-        echo "<h3>Username or password is invalid.</h3>";
+        ?><h3 style="color:red;">Username or password is invalid.</h3><?php
     }
  
     }
@@ -65,6 +75,8 @@
 
          
         <div class="container main">
+            <h4>Username = HSadmin</h4>
+            <h4>Password = HSpages123</h4>
             <!--left-->
             <div class="left-container">
                 <div class="container-logo"><img src="img/logo.png" width="150" height="150" alt="..."/></div>
@@ -76,9 +88,9 @@
                 <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                     <h2 class="form-title">Sign in</h2>
                     <span class="error-message"><?php echo $usernameErr; ?></span>
-                    <input type="text" name="username" placeholder="Username">
+                    <input id ="u_name" type="text" name="username" placeholder="Username">
                    <span class="error-message"><?php echo $passErr; ?></span>
-                    <input type="password" name="password" placeholder="Password">
+                    <input id="pass_word" type="password" name="password" placeholder="Password">
                     <div class="check-box">
                             <input type="checkbox" name="remember" value="1"> 
                             <label>Remember me</label>
