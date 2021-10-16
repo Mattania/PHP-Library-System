@@ -29,21 +29,7 @@ body{
     margin-top: 100px;
 
 }
-.form-container{
-    position:absolute;
-    right:0rem;
-    top:0.2rem;
-    height: 29rem;
-    text-align:center;
-    width: 45%;
-    border:0.5rem;
-    box-shadow:var(--shadow-large);
-    display:grid;
-    place-items:center;
-    border-radius: 9px;
-    /* background-color:#2ca3c1; */
 
-}
 form{
     margin-top:0rem;
     display:flex;

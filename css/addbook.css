@@ -26,16 +26,7 @@ body{
     place-items:center;
 }
 
-.form-container{
-        margin-top:2rem;
-        height: 100%;
-        width:33%;
-        border:0.5rem;
-        box-shadow:var(--shadow-large);
-        background-color:var(--color-white);
-        overflow:hidden;
 
-    }
     input{
         margin-top:10px;
     }

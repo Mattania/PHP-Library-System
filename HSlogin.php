@@ -8,6 +8,19 @@
             .error-message, i{
                 color: #FF0000;  
             }
+            .form-container{
+                position:absolute;
+                right:0rem;
+                top:0.2rem;
+                height: 20rem;
+                text-align:center;
+                width: 45%;
+                border:0.5rem;
+                box-shadow:var(--shadow-large);
+                display:grid;
+                place-items:center;
+                border-radius: 9px;
+}
         </style>
 </head>
 <body>
@@ -28,7 +41,7 @@
            $data = htmlspecialchars($data);
            return $data;
        }
-
+       
        if(!empty($_POST['username'])){
            $username = test_input($_POST['username']);
          }else{      
