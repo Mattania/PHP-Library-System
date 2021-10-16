@@ -5,7 +5,6 @@
 ## Technologies
 * Bootstrap 5
 * PHP 8.0
-* JQuery
 * CSS3
 * HTML5
 * xampp
